@@ -4,7 +4,7 @@ import styled from 'styled-components';
 interface Props {
   id: string;
   placeholder: string;
-  onClick?: () => void;
+  onInput?: () => void;
   type: 'text' | 'password';
 }
 
@@ -15,11 +15,11 @@ const InputStyle = styled.input`
   padding: 8px;
 `;
 
-const Input = ({ id, onClick, placeholder, type }: Props) => {
+const Input = ({ id, onInput, placeholder, type }: Props) => {
   return (
     <InputStyle
       id={id}
-      onClick={onClick}
+      onInput={onInput}
       placeholder={placeholder}
       type={type}
     />
