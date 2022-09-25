@@ -7,6 +7,8 @@ interface Props {
 const SubTitleStyle = styled.h2`
   color: #000000;
   font-size: 18px;
+  margin: 8px 0px;
+  padding: 0px;
 `;
 
 const SubTitle = ({ label = '', ...props }: Props) => {
