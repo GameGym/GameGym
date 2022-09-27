@@ -8,6 +8,8 @@ interface Props {
 
 const LinkTextStyle = styled.a`
   padding: 12px 8px;
+  text-decoration: none;
+  color: #000000;
 `;
 
 const LinkText = ({ text, href }: Props) => {
