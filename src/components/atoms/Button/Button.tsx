@@ -16,7 +16,7 @@ interface Props {
 // styled-components 정의에 변수값이 들어간다면 변수값에 대한 정의 타입이 필요합니다.
 // 각 porps타입에 대해 적어줄 수도 있습니다.
 const ButtonStyle = styled.button<Props>`
-  width: min-content;
+  width: fit-content;
   padding: 8px 16px;
   font-size: 16px;
   border: 2px solid #000000;
