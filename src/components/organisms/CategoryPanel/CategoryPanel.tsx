@@ -27,7 +27,7 @@ export default CategoryPanel;
 const Category = styled.aside`
   background-color: #f5f5f5;
   width: 288px;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

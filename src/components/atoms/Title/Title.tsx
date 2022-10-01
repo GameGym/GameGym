@@ -6,6 +6,8 @@ interface Props {
 
 const TitleStyle = styled.h1`
   color: #000000;
+  font-size: 36px;
+  font-weight: 700;
 `;
 
 const Title = ({ label = 'Welcome to GG', ...props }: Props) => {
