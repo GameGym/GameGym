@@ -11,6 +11,7 @@ interface Props {
   category?: boolean;
   isActive?: boolean;
   onClick?: () => void;
+  children?: React.ReactNode;
 }
 
 // styled-components 정의에 변수값이 들어간다면 변수값에 대한 정의 타입이 필요합니다.
@@ -24,6 +25,9 @@ const ButtonStyle = styled.button<Props>`
   background-color: ${props => props.bgColor};
   color: ${props => props.textColor};
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
   ${props =>
     props.small &&
@@ -57,6 +61,7 @@ const Button = ({
   bgColor,
   textColor,
   onClick,
+  children,
   ...props
 }: Props) => {
   return (
@@ -66,6 +71,7 @@ const Button = ({
       onClick={onClick}
       {...props}
     >
+      {children}
       {label}
     </ButtonStyle>
   );
