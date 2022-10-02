@@ -74,7 +74,7 @@ const LoginPanel = ({ onInput_id, onInput_pw }: props) => {
             text='Password'
             id='password'
             placeholder='비밀번호를 입력해주세요.'
-            type='text'
+            type='password'
             onInput={onInput_pw}
           />
         </InputBoxStyle>
