@@ -30,8 +30,7 @@ const LoginFormStyle = styled.form`
 
 //input창 크기 조정
 const InputBoxStyle = styled.div`
-  width: 94%;
-  margin-left: -20px;
+  width: 100%;
 `;
 
 //회원가입 TextWrap

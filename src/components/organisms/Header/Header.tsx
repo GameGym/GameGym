@@ -20,8 +20,8 @@ const Header = () => {
             text3='About Us'
             href3='#'
           />
-          <Image src={user} />
-          <Image src={mail} />
+          <Image src={user} icon />
+          <Image src={mail} icon />
         </div>
       </Wrapper>
     </Container>
@@ -32,7 +32,7 @@ export default Header;
 
 const Container = styled.header`
   border-bottom: 2px solid black;
-  padding: 0 25px;
+  padding: 24px;
   div {
     display: flex;
     justify-content: space-between;
@@ -45,9 +45,13 @@ const Container = styled.header`
 
 const Wrapper = styled.div`
   &::after {
-    content: '|';
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: #000000;
     display: block;
     position: absolute;
+    top: 50px;
     right: 140px;
   }
 `;
