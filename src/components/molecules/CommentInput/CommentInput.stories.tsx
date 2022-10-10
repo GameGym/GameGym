@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import CommentInput from './CommentInput';
 
 export default {
-  title: 'Organisms/CommentInput',
+  title: 'Molecules/CommentInput',
   component: CommentInput,
 } as ComponentMeta<typeof CommentInput>;
 

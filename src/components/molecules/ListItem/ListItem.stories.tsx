@@ -3,7 +3,7 @@ import ListItem from './ListItem';
 import thumbnail from '../../../assets/thumbnail.svg';
 
 export default {
-  title: 'Organisms/ListItem',
+  title: 'Molecules/ListItem',
   component: ListItem,
 } as ComponentMeta<typeof ListItem>;
 

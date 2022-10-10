@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import TagPanel from './TagPanel';
 
 export default {
-  title: 'Organisms/TagPanel',
+  title: 'Molecules/TagPanel',
   component: TagPanel,
 } as ComponentMeta<typeof TagPanel>;
 
