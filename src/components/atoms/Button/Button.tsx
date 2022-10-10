@@ -28,6 +28,9 @@ const ButtonStyle = styled.button<Props>`
   display: flex;
   gap: 9px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
   ${props =>
     props.small &&
