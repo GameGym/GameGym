@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import React from 'react';
 import LinkText from '../../atoms/LinkText/LinkText';
 
 interface Props {
