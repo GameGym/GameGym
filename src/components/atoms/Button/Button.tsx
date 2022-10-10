@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import styled, { css } from 'styled-components';
 
 // 버튼에 넘겨주는 props들에 대한 type정의입니다.
@@ -11,6 +12,7 @@ interface Props {
   category?: boolean;
   isActive?: boolean;
   onClick?: () => void;
+  children?: React.ReactNode;
 }
 
 // styled-components 정의에 변수값이 들어간다면 변수값에 대한 정의 타입이 필요합니다.
@@ -23,6 +25,8 @@ const ButtonStyle = styled.button<Props>`
   border-radius: 8px;
   background-color: ${props => props.bgColor};
   color: ${props => props.textColor};
+  display: flex;
+  gap: 9px;
   cursor: pointer;
 
   ${props =>
@@ -57,6 +61,7 @@ const Button = ({
   bgColor,
   textColor,
   onClick,
+  children,
   ...props
 }: Props) => {
   return (
@@ -66,6 +71,7 @@ const Button = ({
       onClick={onClick}
       {...props}
     >
+      {children}
       {label}
     </ButtonStyle>
   );
