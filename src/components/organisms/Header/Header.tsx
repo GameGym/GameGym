@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from '../../atoms/Image/Image';
 import Title from '../../atoms/Title/Title';
-import TagPanel from '../TagPanel/TagPanel';
+import TagPanel from '../../molecules/TagPanel/TagPanel';
 import user from '../../../assets/avatar.svg';
 import mail from '../../../assets/mail-alt.svg';
 
@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <Container>
       <Wrapper>
-        <Title label='Welcome to GG' />
+        <Title label='Game Gym' />
         <div>
           <TagPanel
             text1='shop'
@@ -51,7 +51,7 @@ const Wrapper = styled.div`
     background-color: #000000;
     display: block;
     position: absolute;
-    top: 50px;
-    right: 140px;
+    top: 35px;
+    right: 125px;
   }
 `;

@@ -1,4 +1,3 @@
-import { Children } from 'react';
 import styled, { css } from 'styled-components';
 
 // 버튼에 넘겨주는 props들에 대한 type정의입니다.
@@ -30,6 +29,7 @@ const ButtonStyle = styled.button<Props>`
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
 
   ${props =>
