@@ -1,3 +1,4 @@
+import { Children } from 'react';
 import styled, { css } from 'styled-components';
 
 // 버튼에 넘겨주는 props들에 대한 type정의입니다.
@@ -24,6 +25,8 @@ const ButtonStyle = styled.button<Props>`
   border-radius: 8px;
   background-color: ${props => props.bgColor};
   color: ${props => props.textColor};
+  display: flex;
+  gap: 9px;
   cursor: pointer;
   display: flex;
   align-items: center;
