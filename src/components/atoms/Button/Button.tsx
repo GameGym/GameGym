@@ -13,6 +13,7 @@ interface Props {
   isActive?: boolean;
   onClick?: () => void;
   children?: React.ReactNode;
+  reverse?: boolean;
 }
 
 // styled-components 정의에 변수값이 들어간다면 변수값에 대한 정의 타입이 필요합니다.
@@ -55,6 +56,12 @@ const ButtonStyle = styled.button<Props>`
       text-transform: capitalize;
       border-color: ${(props: any) =>
         props.isActive ? '#000000' : 'hsl(0, 0%, 72%)'};
+    `}
+
+  ${props =>
+    props.reverse &&
+    css`
+      flex-direction: row-reverse;
     `}
 `;
 
